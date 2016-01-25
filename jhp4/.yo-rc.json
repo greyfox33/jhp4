@@ -1,0 +1,25 @@
+{
+  "generator-jhipster": {
+    "baseName": "jhp4",
+    "packageName": "com.ots.jhp4",
+    "packageFolder": "com/ots/jhp4",
+    "authenticationType": "oauth2",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": false,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "70f19a5014092300038f015ac3a52c0860c3756c",
+    "testFrameworks": [
+      "gatling",
+      "protractor"
+    ]
+  }
+}

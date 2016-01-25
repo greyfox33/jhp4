@@ -1,0 +1,6 @@
+curl -X POST -vu jhip3app:mySecretOAuthSecret http://jhip3-env.elasticbeanstalk.com/oauth/token -H "Accept: application/json" -d "username=admin&password=admin&grant_type=password&scope=read&client_id=jhip3app&client_secret=mySecretOAuthSecret"
+
+
+curl -X POST -vu jhp4app:mySecretOAuthSecret http://localhost:8080/oauth/token -H "Accept: application/json" -d "username=admin&password=admin&grant_type=password&scope=read&client_id=jhp4app&client_secret=mySecretOAuthSecret"
+
+curl http://localhost:8080/api/users -H "Authorization: Bearer 76436cf3-2da4-4b8c-adfe-5732c1c01d04"

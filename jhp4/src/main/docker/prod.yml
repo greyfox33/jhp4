@@ -1,0 +1,12 @@
+jhp4-mysql:
+  container_name: jhp4-mysql
+  image: mysql:5.7.9
+  # volumes:
+  #   - ~/volumes/jhipster/jhp4/mysql/:/var/lib/mysql/
+  environment:
+    - MYSQL_USER=root
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_DATABASE=jhp4
+  ports:
+    - "3306:3306"
+  command: mysqld --lower_case_table_names=1
